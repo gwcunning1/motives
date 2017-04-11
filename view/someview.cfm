@@ -12,12 +12,6 @@
       <cfcase value="175Multi">
        <cfinclude template="home175Multi.cfm"/>
       </cfcase>
-      <cfcase value="175">
-       <cfinclude template="home175.cfm"/>
-      </cfcase>
-      <cfcase value="80Image">
-       <cfinclude template="home80Image.cfm"/>
-      </cfcase>
       <cfcase value="80">
        <cfinclude template="home80.cfm"/>
       </cfcase>

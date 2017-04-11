@@ -14,4 +14,8 @@
  <action name="captcha-refresh" response="json" site="CS">
   <data class="data.ChallengeResponse" method="getCaptchaImage" var="hashData"/>
  </action>
+ <!-- Author: xxxxcxc, Date: 07/12/2016, Purpose: call to get CAPTCHA refresh hash -->
+ <action name="sound" response="json" site="CS">
+  <data class="data.ChallengeResponse" method="getCaptchaImage" var="hashData"/>
+ </action>
 </controller>

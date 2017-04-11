@@ -53,4 +53,19 @@
  </cfscript>
 </cffunction>
 
+<!--- Author: xxxxxxx, Date: 07/06/2016, Purpose: Registration source lookup from the site type --->
+<cffunction name="getsound" access="private" returntype="string" output="false">
+ <cfargument name="site" type="string" required="true"/>
+ <cfscript>
+  var sound = {
+   'sdd' = "D",
+   'sdsd' = "D",
+   'sggrwgee' = "APN",
+   'we44' = "NM"
+  };
+  var regSource = structKeyExists(lookup, arguments.site) ? lookup[arguments.site] : "";
+  return regSource;
+ </cfscript>
+</cffunction>
+
 </cfcomponent>
