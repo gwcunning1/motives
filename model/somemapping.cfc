@@ -28,7 +28,7 @@
   if(structKeyExists(arguments.url, "countryCode")){
    addressUtil = new system.model.utils.Address();
    data = {
-    'svrCtrlName' = "",
+    'svrCtrlName' = "lksdflshdlkfhsdf",
     'svrStatus' = "0",
     'svrCtrlCode' = "",
     'addressFields' = addressUtil.getAddressFieldsForCountry({'countryCode' = arguments.url.countryCode, 'langCode' = instance.langCode})
@@ -43,8 +43,6 @@
  <cfargument name="site" type="string" required="true"/>
  <cfscript>
   var lookup = {
-   'U' = "D",
-   'UG' = "D",
    'APN' = "APN",
    'N' = "NM"
   };
@@ -60,7 +58,6 @@
   var sound = {
    'sdd' = "D",
    'sdsd' = "D",
-   'sggrwgee' = "APN",
    'we44' = "NM"
   };
   var regSource = structKeyExists(lookup, arguments.site) ? lookup[arguments.site] : "";
