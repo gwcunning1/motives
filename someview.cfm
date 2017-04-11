@@ -20,6 +20,7 @@
     </cfcase>
     <cfcase value="image">
      <cfinclude template="homeImage.cfm"/>
+     And more here
     </cfcase>
    </cfswitch>
   </cfloop>
