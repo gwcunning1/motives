@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controller name="join">
+ <!-- placeholder default mapping to be replaced or updated at a later date -->
+ <action name="test" view="cs/layout/country.cfm" content="" site="CS">
+  <template header="cs/layout/toolbar*.cfm,cs/layout/header*.cfm" footer="cs/layout/footer*.cfm"/>
+ </action>
+ <!-- Author: xxxxx, Date: 05/23/2014, Purpose: complete SUW -->
+ <!-- Modified: xxxxxx, Date: 12/02/2014, Purpose: removed content/added collection -->
+ <action name="get-started-now-complete" view="cs/join/getStartedNowComplete.cfm" collection="cs.gettingStarted" site="CS" share="true">
+  <template header="cs/layout/toolbar*.cfm,cs/layout/header*.cfm" footer="cs/layout/footer*.cfm"/>
+  <data class="data.AppMain" method="setUsrLogOut" var="clrData"/>
+ </action>
+ <!-- Author: xxxxcxc, Date: 07/12/2016, Purpose: call to get CAPTCHA refresh hash -->
+ <action name="captcha-refresh" response="json" site="CS">
+  <data class="data.ChallengeResponse" method="getCaptchaImage" var="hashData"/>
+ </action>
+</controller>
